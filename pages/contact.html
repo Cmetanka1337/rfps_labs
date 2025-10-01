@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Corporation - Feedback</title>
+</head>
+<body>
+<header>
+    <h1>Construction Corporation</h1>
+    <img src="logo.jpeg" alt="Corporation Logo" width="150">
+</header>
+
+<main>
+    <h2>Feedback Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education">
+                <option value="full">Full</option>
+                <option value="incomplete">Incomplete</option>
+                <option value="higher">Higher</option>
+                <option value="professional">Professional</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <label for="purpose">Feedback Purpose:</label>
+        <select id="purpose" name="purpose">
+            <option value="cooperation">Cooperation</option>
+            <option value="complaint">Complaint on rights violation</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="error">Error found</option>
+        </select><br><br>
+
+        <label for="details">Details:</label><br>
+        <textarea id="details" name="details" rows="5" cols="40" maxlength="500"></textarea><br><br>
+
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">I agree to the processing of my information</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</main>
+
+<footer>
+    <p><a href="index.html">Back to Main Page</a></p>
+</footer>
+</body>
+</html>

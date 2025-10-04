@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Construction Corporation - Main</title>
+    <style>
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .mission {
+            margin-top: 250px;
+            padding: 0;
+            border: 1px solid black;
+        }
+
+        table {
+            transition: transform 0.3s ease;
+        }
+        table:hover {
+            transform: scale(1.05);
+        }
+
+        footer p:hover {
+            transition: text-shadow 2s ease;
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        .director {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
 <header>
     <h1>Construction Corporation</h1>
     <img src="logo.jpeg" alt="Corporation Logo" width="150">
+    <nav>
+        <a href="activities.html">Activities</a> |
+        <a href="contact.html">Feedback</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="activities.html">Activities</a> |
-    <a href="contact.html">Feedback</a>
-</nav>
-
 <main>
-    <article>
+    <article class="mission">
         <h2>Our Mission</h2>
         <p>The corporation was established to provide modern and reliable construction solutions for urban development.</p>
         <ol type="I">
@@ -25,6 +54,8 @@
             <li>Cooperate with government and international partners</li>
         </ol>
     </article>
+
+    <div class="director">👨‍💼 Director’s message here...</div>
 
     <aside>
         <h2>Founders</h2>

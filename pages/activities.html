@@ -3,6 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Construction Corporation - Activities</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            width: 100%;
+            padding: 10px;
+        }
+        main {
+            margin-top: 250px;
+        }
+
+        article {
+            border: 3px double darkorange;
+            border-right: 3px solid darkorange;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .gov {
+            font-weight: lighter;
+            font-size: smaller;
+            font-style: italic;
+        }
+
+        article img {
+            transition: filter 0.5s ease;
+        }
+        article img:focus {
+            filter: saturate(200%);
+        }
+
+        a:active {
+            color: darkgreen;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -23,20 +60,20 @@
 
     <article>
         <h3>Residential Buildings</h3>
-        <img src="residential.jpeg" alt="Residential Buildings" width="250">
-        <p>High-quality and sustainable housing projects. Connected with municipal housing authorities.</p>
+        <img src="residential.jpeg" alt="Residential Buildings" width="250" tabindex="0">
+        <p>High-quality and sustainable housing projects. <span class="gov">Connected with municipal housing authorities.</span></p>
     </article>
 
     <article>
         <h3>Bridge Construction</h3>
-        <img src="bridge.jpeg" alt="Bridge Construction" width="250">
-        <p>Reliable bridge engineering. Collaboration with Ministry of Infrastructure.</p>
+        <img src="bridge.jpeg" alt="Bridge Construction" width="250" tabindex="0">
+        <p>Reliable bridge engineering. <span class="gov">Collaboration with Ministry of Infrastructure.</span></p>
     </article>
 
     <article>
         <h3>Urban Planning</h3>
-        <img src="urban.jpeg" alt="Urban Planning" width="250">
-        <p>Modern city planning. In cooperation with government urban development agencies.</p>
+        <img src="urban.jpeg" alt="Urban Planning" width="250" tabindex="0">
+        <p>Modern city planning. <span class="gov">In cooperation with government urban development agencies.</span></p>
     </article>
 </main>
 
